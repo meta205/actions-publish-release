@@ -1,0 +1,24 @@
+name: 'GitHub Action for publishing a GitHub Draft Release'
+description: 'This is a GitHub Action for publishing a GitHub Draft Release.'
+
+branding:
+  icon: upload
+  color: 'blue'
+
+inputs:
+  owner:
+    description: 'The owner of github'
+    required: false
+  repo:
+    description: 'The repo of github'
+    required: false
+  release-id:
+    description: 'The release name of github'
+    required: false
+  tag-name:
+    description: 'The tag name of github'
+    required: false
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
