@@ -9,8 +9,8 @@ import { Octokit } from '@octokit/rest';
 
     let owner: string = core.getInput('owner');
     let repo: string = core.getInput('repo');
-    let releaseId: number = Number.parseInt(core.getInput('release-id') || '0');
-    let tagName: string = core.getInput('tag-name');
+    let releaseId: number = Number.parseInt(core.getInput('release_id') || '0');
+    let tagName: string = core.getInput('tag_name');
 
     if (!owner || !repo) {
       const repoInfo: string[] = process.env.GITHUB_REPOSITORY!.split('/');
