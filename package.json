@@ -12,7 +12,7 @@
     "url": "git+https://github.com/meta205/actions-publish-release.git"
   },
   "keywords": [
-    "yajsw"
+    "actions-publish-release"
   ],
   "author": "Kyongho Lee",
   "license": "MIT",
